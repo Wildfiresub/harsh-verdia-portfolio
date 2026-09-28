@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111916">
+  <meta name="description" content="Harsh Verdia - Computer Science & AI student at the University of Edinburgh. Applied machine learning, backend engineering, and distributed systems.">
+  <title>Harsh Verdia - Software & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header wrap">
+    <a class="wordmark" href="#main" aria-label="Harsh Verdia home">hv<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav-contact" href="mailto:harsh.verdia2@gmail.com">
+      Get in touch <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEERING & APPLIED AI</p>
+        <h1 id="hero-title">Hi, I’m Harsh. I build AI and backend software.</h1>
+        <p class="intro">I’m a Computer Science and AI student at the University of Edinburgh. I’ve built a multilingual search system over 9.5 million EU Parliament speeches, evaluated a transformer for financial call transcripts, and worked on backend and data workflows.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="Harsh-Verdia-CV.pdf" target="_blank" rel="noopener">
+            View CV <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="hero-note">
+          <span class="small-icon" aria-hidden="true">⌘</span>
+          MInf Computer Science & AI <span class="note-divider">/</span> University of Edinburgh
+        </div>
+      </div>
+
+      <div class="system-art" role="img" aria-label="EU Parliament search flow from speeches through a language-aware index to search results">
+        <div class="art-top"><span>EU PARLIAMENT SEARCH</span><span>FIG. 01</span></div>
+        <div class="search-flow">
+          <div class="flow-step">
+            <span class="flow-number">01</span>
+            <strong>Speeches</strong>
+            <small>9.5M documents<br>24 languages</small>
+          </div>
+          <span class="flow-arrow" aria-hidden="true"></span>
+          <div class="flow-step">
+            <span class="flow-number">02</span>
+            <strong>Index</strong>
+            <small>TF-IDF<br>language-aware</small>
+          </div>
+          <span class="flow-arrow" aria-hidden="true"></span>
+          <div class="flow-step">
+            <span class="flow-number">03</span>
+            <strong>Search results</strong>
+            <small>FastAPI<br>cross-lingual retrieval</small>
+          </div>
+        </div>
+        <div class="art-bottom"><span>DOCUMENTS → FINDINGS</span><span class="cross">+</span></div>
+      </div>
+    </section>
+
+    <section class="metrics wrap" aria-labelledby="metrics-title">
+      <div class="metrics-heading">
+        <p class="eyebrow">SELECTED RESULTS</p>
+        <h2 id="metrics-title">A few outcomes from projects and internships.</h2>
+      </div>
+      <dl>
+        <div>
+          <dt>9.5M<span>+</span></dt>
+          <dd>EU Parliament search corpus</dd>
+        </div>
+        <div>
+          <dt>24</dt>
+          <dd>EU Parliament search coverage</dd>
+        </div>
+        <div>
+          <dt>Up to 3<span>×</span></dt>
+          <dd>Aveni model deployment speedup</dd>
+        </div>
+        <div>
+          <dt>60<span>%</span></dt>
+          <dd>Maritime workflows with less manual processing</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="work" class="section wrap" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / SELECTED WORK</p>
+          <h2 id="work-title">Selected projects</h2>
+        </div>
+        <p>Search, machine learning, and systems engineering projects.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-visual search-visual" aria-hidden="true">
+            <div class="search-box">
+              <span>⌕</span> One parliament. 24 languages.<span class="search-cursor">|</span>
+            </div>
+            <div class="language-row">
+              <span>EN</span><span>FR</span><span>DE</span><span>ES</span><span>IT</span><span>+19</span>
+            </div>
+            <div class="visual-caption">9,500,000+ SPEECHES · ONE SEARCH ENGINE</div>
+          </div>
+          <div class="project-info">
+            <p class="eyebrow">INFORMATION RETRIEVAL</p>
+            <h3 id="project-search-title">Making a multilingual parliament searchable <span aria-hidden="true">↗</span></h3>
+            <p>A custom search engine spanning 9.5 million speeches across 24 EU languages.</p>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>Next.js</span><span>Docker</span></div>
+            <button class="project-detail-button" type="button" data-project="search" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View project details: Multilingual EU Parliament Search Engine">
+              View project details <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual learning-visual" aria-hidden="true">
+            <div class="network">
+              <div><i></i><i></i><i></i></div><span>⟶</span>
+              <div><i></i><i></i><i></i><i></i></div><span>⟶</span>
+              <div><i></i><i></i><i></i></div>
+            </div>
+            <div class="visual-caption">LEARN A TASK. WHAT STAYS?</div>
+          </div>
+          <div class="project-info">
+            <p class="eyebrow">MACHINE LEARNING RESEARCH</p>
+            <h3 id="project-learning-title">Understanding what neural networks forget <span aria-hidden="true">↗</span></h3>
+            <p>Investigating how architecture shapes continual learning and catastrophic forgetting.</p>
+            <div class="tags"><span>PyTorch</span><span>Python</span><span>Continual learning</span></div>
+            <button class="project-detail-button" type="button" data-project="learning" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View project details: Architecture-Conditioned Continual Learning">
+              View project details <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual systems-visual" aria-hidden="true">
+            <div class="server-diagram">
+              <div class="server">01<span>LEADER</span></div><b>↔</b>
+              <div class="server">02<span>REPLICA</span></div><b>↔</b>
+              <div class="server">03<span>REPLICA</span></div>
+            </div>
+            <div class="visual-caption">REPLICATE · RECOVER · KEEP GOING</div>
+          </div>
+          <div class="project-info">
+            <p class="eyebrow">DISTRIBUTED SYSTEMS</p>
+            <h3 id="project-distributed-title">Building for the moment a node fails <span aria-hidden="true">↗</span></h3>
+            <p>A distributed file system and prime computing cluster with replication and failover.</p>
+            <div class="tags"><span>Go</span><span>gRPC</span><span>Docker</span></div>
+            <button class="project-detail-button" type="button" data-project="distributed" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View project details: Distributed File System and Prime Computing Cluster">
+              View project details <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual drone-visual" aria-hidden="true">
+            <svg viewBox="0 0 500 180" fill="none">
+              <path d="M70 130H150V65H275V115H410" stroke="#93b5a1" stroke-width="2" stroke-dasharray="7 6"/>
+              <rect x="192" y="95" width="55" height="53" rx="5" fill="#293e34" stroke="#537260"/>
+              <rect x="308" y="25" width="58" height="56" rx="5" fill="#293e34" stroke="#537260"/>
+              <circle cx="70" cy="130" r="7" fill="#c5edab"/>
+              <circle cx="410" cy="115" r="7" fill="#c5edab"/>
+              <circle cx="410" cy="115" r="17" stroke="#c5edab"/>
+            </svg>
+            <div class="visual-caption">A* ROUTING · REAL-WORLD CONSTRAINTS</div>
+          </div>
+          <div class="project-info">
+            <p class="eyebrow">PATHFINDING & BACKEND ENGINEERING</p>
+            <h3 id="project-drone-title">A smarter route for autonomous delivery <span aria-hidden="true">↗</span></h3>
+            <p>PizzaDronz: a drone route-planning service that navigates no-fly-zone constraints.</p>
+            <div class="tags"><span>Java</span><span>Spring Boot</span><span>A* search</span></div>
+            <button class="project-detail-button" type="button" data-project="drone" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View project details: PizzaDronz Autonomous Drone Delivery">
+              View project details <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <a class="text-link github-link" href="https://github.com/Wildfiresub" target="_blank" rel="noopener noreferrer">
+        View GitHub profile <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+      <div class="wrap experience-layout">
+        <div>
+          <p class="eyebrow">02 / EXPERIENCE</p>
+          <h2 id="experience-title">Where I’ve worked</h2>
+          <p class="section-description">Experience across model evaluation, backend services, and data workflows.</p>
+          <a class="text-link" href="Harsh-Verdia-CV.pdf" download>Download full CV <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="timeline">
+          <article class="role">
+            <div class="role-top">
+              <h3>Aveni <span>Agent Assure</span></h3>
+              <time datetime="2026-06">JUN 2026 - PRESENT</time>
+            </div>
+            <h4>AI Intern</h4>
+            <p>For financial call transcript analysis, trained and evaluated a 395M-parameter transformer across 27 vulnerability categories. Achieved 0.784 F1 and 0.893 PR-AUC across 15+ model ablations.</p>
+            <p>Benchmarked 20+ AWS instance types and reduced inference latency by approximately two to three times through quantisation and deployment optimisation.</p>
+          </article>
+
+          <article class="role">
+            <div class="role-top">
+              <h3>FounderMatcha</h3>
+              <time datetime="2026-04">APR - JUN 2026</time>
+            </div>
+            <h4>Backend Developer Intern</h4>
+            <p>For an AI-driven startup platform, built Flask, Firebase, and Firestore backend features for conversation-analysis workflows and structured behavioural insights.</p>
+            <p>Developed API endpoints for triggering analysis jobs, retrieving AI-generated insights, and logging tool execution events.</p>
+          </article>
+
+          <article class="role">
+            <div class="role-top">
+              <h3>Maritime Data Analysis</h3>
+              <time datetime="2024-02">FEB 2024 - DEC 2025</time>
+            </div>
+            <h4>Software Developer · Arbitration Support</h4>
+            <p>For maritime performance and arbitration workflows, built Python pipelines and Django/Next.js tools. Automated PDF extraction with Camelot and data cleaning with Pandas, reducing manual processing by 60%.</p>
+          </article>
+
+          <article class="role">
+            <div class="role-top">
+              <h3>TechCurve</h3>
+              <time datetime="2021-06">JUN - AUG 2021</time>
+            </div>
+            <h4>Python Developer Intern</h4>
+            <p>For app development, built a Python scraper to collect and structure Google Maps geolocation data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap about-layout" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">03 / A LITTLE ABOUT ME</p>
+          <h2 id="about-title">A little about me</h2>
+        <p class="about-copy">I’m studying for an MInf in Computer Science and Artificial Intelligence at the University of Edinburgh. My work connects machine learning with the systems needed to make it useful.</p>
+        <p class="about-copy">I’m particularly interested in how models learn, how systems behave under failure, and how thoughtful evaluation leads to better engineering decisions.</p>
+        <div class="education">
+          <span aria-hidden="true">↗</span>
+          <div>
+            <strong>University of Edinburgh</strong>
+            <p>MInf Computer Science & Artificial Intelligence · 2022-Present</p>
+          </div>
+        </div>
+      </div>
+      <div class="toolbox">
+        <p class="eyebrow">TOOLS I WORK WITH</p>
+        <div><h3>Languages</h3><p>Python · Java · Go · TypeScript · SQL · Scala · C</p></div>
+        <div><h3>AI & data</h3><p>PyTorch · Pandas · NumPy · Model quantisation · Data pipelines</p></div>
+        <div><h3>Backend & infrastructure</h3><p>FastAPI · Flask · Django · Spring Boot · Next.js · AWS · Docker · Firebase · gRPC</p></div>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2 id="contact-title">Get in touch</h2>
+      <p>I’m open to software engineering and applied AI opportunities.</p>
+      <a class="button primary" href="mailto:harsh.verdia2@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+      <a class="email-link" href="mailto:harsh.verdia2@gmail.com">harsh.verdia2@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <a class="wordmark" href="#main" aria-label="Back to top">hv<span>.</span></a>
+    <p>© <span id="year">2026</span> Harsh Verdia</p>
+    <div>
+      <a href="https://github.com/Wildfiresub" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/harsh-verdia-190337273" target="_blank" rel="noopener noreferrer">LinkedIn profile <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+
+  <dialog id="project-dialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-summary">
+    <button class="dialog-close" type="button" aria-label="Close project details"><span aria-hidden="true">×</span></button>
+    <p class="eyebrow" id="dialog-category"></p>
+    <h2 id="dialog-title"></h2>
+    <div id="dialog-content"></div>
+    <a id="dialog-profile-link" class="text-link" href="https://github.com/Wildfiresub" target="_blank" rel="noopener noreferrer">
+      View GitHub profile <span aria-hidden="true">↗</span>
+    </a>
+  </dialog>
+</body>
+</html>

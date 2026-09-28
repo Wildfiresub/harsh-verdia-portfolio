@@ -1,0 +1,17 @@
+# Private or generated CV files
+*.pdf
+
+# Coursework repositories and downloaded dependencies
+external/
+
+# Local and editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls

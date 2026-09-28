@@ -1,0 +1,95 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{microtype}
+
+\setlist[itemize]{itemsep=1.5pt, topsep=2pt, leftmargin=*, parsep=0pt, partopsep=0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+\urlstyle{same}
+
+\newcommand{\cvrole}[3]{%
+  \textbf{#1} \hfill \textit{#2}\\
+  \textit{#3}
+}
+
+\begin{document}
+
+\begin{center}
+  {\Large \textbf{Harsh Verdia}} \\[4pt]
+  \href{mailto:harsh.verdia2@gmail.com}{harsh.verdia2@gmail.com}
+  \quad | \quad 07469 536291 \\[2pt]
+  \href{https://github.com/Wildfiresub}{github.com/Wildfiresub}
+  \quad | \quad \href{https://www.linkedin.com/in/harsh-verdia-190337273/}{linkedin.com/in/harsh-verdia-190337273}
+\end{center}
+
+\section*{Education}
+\textbf{University of Edinburgh} \hfill \textit{2022 - 2027 expected}\\
+\textit{MInf Computer Science and Artificial Intelligence}\\
+\textbf{Key coursework:} Introduction to Computation, Object-Oriented Programming, Linear Algebra, Calculus and its Applications, Logic 1, Reasoning and Agents, Algorithms and Data Structures, Computer Systems, Foundations of Data Science, Discrete Mathematics and Probability, Software Engineering and Professional Practice, System Design Project, Informatics Large Practical, Professional Issues, Computer Security, Foundations of Natural Language Processing, Operating Systems, Introduction to Mobile Robotics, Honours Project, Elements of Programming Languages, Distributed Systems, Machine Learning Practical, Text Technologies for Data Science, Advanced Topics in Natural Language Processing\\
+\textbf{A Levels:} Mathematics (A*), Physics (A*), Computer Science (A*), Economics (A)
+
+\section*{Technical Skills}
+\textbf{Languages:} Python, Java, Go, Scala, TypeScript, SQL \\
+\textbf{Frameworks:} PyTorch, FastAPI, Flask, Django, Next.js, Spring Boot, Pandas, NumPy \\
+\textbf{Tools and systems:} AWS, Docker, Git, Firebase, Firestore, SQLite, gRPC, REST APIs, model quantisation, distributed systems
+
+\section*{Experience}
+\cvrole{AI Intern, Aveni (Agent Assure)}{Jun 2026 - Sep 2026}{Applied ML and model deployment}
+\begin{itemize}
+  \item Trained and evaluated a 395M-parameter transformer for multi-label detection of 27 vulnerability categories in financial call transcripts, achieving 0.784 F1 and 0.893 PR-AUC across 15+ model ablations.
+  \item Investigated conversational context, class imbalance, and synthetic-data quality to identify model failure modes and improve evaluation design.
+  \item Benchmarked CPU and GPU inference across 20+ AWS instance types, selecting cost-effective deployment options while making inference approximately two to three times faster through quantisation and deployment optimisation.
+\end{itemize}
+
+\cvrole{Backend Developer Intern, FounderMatcha}{Apr 2026 - Jun 2026}{Backend engineering}
+\begin{itemize}
+  \item Built Flask, Firebase, and Firestore backend features for an AI-driven startup platform.
+  \item Developed conversation-analysis workflows and APIs to trigger analysis jobs, retrieve structured behavioural insights, and log tool execution events.
+\end{itemize}
+
+\cvrole{Software Developer, Maritime Data Analysis and Arbitration Support}{Feb 2024 - Dec 2025}{Data pipelines and web tools}
+\begin{itemize}
+  \item Built Python data pipelines and Django and Next.js tools for maritime performance analysis and arbitration workflows.
+  \item Automated PDF extraction and data cleaning with Camelot and Pandas, reducing manual processing by 60\%.
+\end{itemize}
+
+\cvrole{Python Developer Intern, TechCurve Tech Company}{Jun 2021 - Aug 2021}{Data collection}
+\begin{itemize}
+  \item Built a Python scraper to collect and structure Google Maps geolocation data for app development.
+\end{itemize}
+
+\section*{Projects}
+\textbf{Multilingual EU Parliament Search Engine} \hfill \textit{Python, FastAPI, SQLite, Next.js, Docker}
+\begin{itemize}
+  \item Built and deployed a search engine over 9.5M parliamentary speeches in 24 EU languages using a custom TF-IDF inverted index.
+  \item Implemented language-aware retrieval with per-language tokenisation, stemming, stopword filtering, and query processing in a FastAPI, SQLite, and Next.js application.
+\end{itemize}
+
+\textbf{Distributed File System and Primality-Testing Cluster} \hfill \textit{Go, gRPC, Docker}
+\begin{itemize}
+  \item Built a Go and gRPC cluster that coordinated multiple servers to test whether very large numbers were prime.
+  \item Implemented caching, replication, leader election, and failover, using epoch-based fencing, idempotent operations, and retries to preserve consistency during failures.
+\end{itemize}
+
+\textbf{Dissertation: Architecture-Conditioned Continual Learning} \hfill \textit{Python, PyTorch}
+\begin{itemize}
+  \item Built PyTorch training and evaluation pipelines comparing five neural-network architectures across ten sequential tasks.
+  \item Measured catastrophic forgetting, accuracy, backward transfer, plasticity, and gradient compatibility across continual-learning methods.
+\end{itemize}
+
+\textbf{Typed Functional Language Interpreter} \hfill \textit{Scala}
+\begin{itemize}
+  \item Implemented an interpreter and type checker for a functional-language coursework project with recursion, pairs, sum types, pattern matching, and call-by-need evaluation.
+  \item Built type normalisation, subtyping, meet and join operations, desugaring, and capture-avoiding substitution.
+\end{itemize}
+
+\end{document}
